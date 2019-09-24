@@ -12,6 +12,7 @@ public class HumanityHome {
 	private static final String FREE_TRIAL_BUTTON = "//a[@class='button pale']";
 	private static final String FULL_NAME = "//div[@class='input-wrapper']//input[@placeholder='Full Name']";
 	private static final String WORK_EMAIL = "//div[@class='input-wrapper']//input[@placeholder='Work Email']";
+	private static final String FREE_TRIAL_BUTTON2 = "//input[@id='free-trial-link-01']";
 	private static final String LOGIN_USERNAME = "//input[@id='email']";
 	private static final String USEREMAIL_XPATH = "//input[@id='email']";
 	private static final String PASSWORD_XPATH = "//input[@id='password']";
@@ -41,12 +42,38 @@ public class HumanityHome {
 		return driver.findElement(By.xpath(FULL_NAME));
 	}
 
+	public static void clickgetFullName(WebDriver driver) {
+		getFullName(driver).click();
+	}
+
+	public static void enterFullName(WebDriver driver, String data) {
+		getFullName(driver).sendKeys(data);
+	}
+
 //Work email
 	public static WebElement getWorkEmail(WebDriver driver) {
 		return driver.findElement(By.xpath(WORK_EMAIL));
 	}
 
-	//LogIn button
+	public static void clickWorkEmail(WebDriver driver) {
+		getWorkEmail(driver).click();
+	}
+
+	public static void enterWorkEmail(WebDriver driver, String data) {
+		getWorkEmail(driver).sendKeys(data);
+	}
+
+	// Free Trial button dole
+	public static WebElement getFreeTrialButton2(WebDriver driver) {
+		return driver.findElement(By.xpath(FREE_TRIAL_BUTTON2));
+	}
+
+	public static void clickFreeTrialButton2(WebDriver driver) {
+		getWorkEmail(driver).click();
+
+	}
+
+	// LogIn button
 	public static WebElement getLogInButton(WebDriver driver) {
 		return driver.findElement(By.xpath(LOGIN_BUTTON));
 	}
@@ -56,37 +83,37 @@ public class HumanityHome {
 	}
 
 	// Email user name
-		public static WebElement getEmailUser(WebDriver driver) {
-			return driver.findElement(By.xpath(USEREMAIL_XPATH));
-		}
-
-		public static void clickEmailUser(WebDriver driver) {
-			getEmailUser(driver).click();
-		}
-
-		public static void enterEmailUser(WebDriver driver, String data) {
-			getEmailUser(driver).sendKeys(data);
-		}
-
-		// Password field
-		public static WebElement getPassField(WebDriver driver) {
-			return driver.findElement(By.xpath(PASSWORD_XPATH));
-		}
-
-		public static void clickPassField(WebDriver driver) {
-			getPassField(driver).click();
-		}
-
-		public static void enterPassField(WebDriver driver, String data) {
-			getPassField(driver).sendKeys(data);
-		}
-
-		// Confirm Log In
-		public static WebElement getlogInBtn(WebDriver driver) {
-			return driver.findElement(By.xpath(CONFIRMLOGIN_XPATH));
-		}
-
-		public static void clicklogInbtn(WebDriver driver) {
-			getlogInBtn(driver).click();
-		}
+	public static WebElement getEmailUser(WebDriver driver) {
+		return driver.findElement(By.xpath(USEREMAIL_XPATH));
 	}
+
+	public static void clickEmailUser(WebDriver driver) {
+		getEmailUser(driver).click();
+	}
+
+	public static void enterEmailUser(WebDriver driver, String data) {
+		getEmailUser(driver).sendKeys(data);
+	}
+
+	// Password field
+	public static WebElement getPassField(WebDriver driver) {
+		return driver.findElement(By.xpath(PASSWORD_XPATH));
+	}
+
+	public static void clickPassField(WebDriver driver) {
+		getPassField(driver).click();
+	}
+
+	public static void enterPassField(WebDriver driver, String data) {
+		getPassField(driver).sendKeys(data);
+	}
+
+	// Confirm Log In
+	public static WebElement getlogInBtn(WebDriver driver) {
+		return driver.findElement(By.xpath(CONFIRMLOGIN_XPATH));
+	}
+
+	public static void clicklogInbtn(WebDriver driver) {
+		getlogInBtn(driver).click();
+	}
+}
