@@ -5,19 +5,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HumanityProfile {
-	public static final String URL ="tkb1.humanity.com/app/staff/detail/5093317/";
+	public static final String URL = "tkb1.humanity.com/app/staff/detail/5093317/";
 	private static final String PROFILE_ICON = "//img[@id='tr_avatar']";
 	private static final String PROFILE = "//a[contains(text(),'Profile')]";
 	private static final String SETTINGS = "//div[@class='userm userm-mainPage']//a[contains(text(),'Settings')]";
 	private static final String AVAILABILITY = "//div[@class='userm userm-mainPage']//a[contains(text(),'Availability')]";
 	private static final String VERSION_APP = "//div[@id='humanityAppVersion']";
+	private static final String ARROW = "//i[@class='icon icon-arrowFullDn j-arrowIconToAvatar navBottom__userArrow']";
 
 //Profile Icon
 	public static WebElement getProfileIcon(WebDriver driver) {
 		return driver.findElement(By.xpath(PROFILE_ICON));
 	}
 
-	public static void clickProfileICon(WebDriver driver) {
+	public static void clickProfileIcon(WebDriver driver) {
 		getProfileIcon(driver).click();
 	}
 
@@ -53,4 +54,12 @@ public class HumanityProfile {
 		return driver.findElement(By.xpath(AVAILABILITY));
 	}
 
+//ARROW
+	public static WebElement getArrow(WebDriver driver) {
+		return driver.findElement(By.xpath(ARROW));
+	}
+
+	public static void clickArrow(WebDriver driver) {
+		getProfile(driver).click();
+	}
 }

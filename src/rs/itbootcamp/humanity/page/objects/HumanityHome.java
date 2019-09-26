@@ -113,7 +113,7 @@ public class HumanityHome {
 		return driver.findElement(By.xpath(CONFIRMLOGIN_XPATH));
 	}
 
-	public static void clicklogInbtn(WebDriver driver) {
+	public static void clicklogInBtn(WebDriver driver) {
 		getlogInBtn(driver).click();
 	}
 }

@@ -12,9 +12,9 @@ public class HumanityStaff {
 	private static final String EMPLOYEE_3 = "//div[@id='_cd_staff']//tr[3]";
 	private static final String EMPLOYEE_4 = "//div[@id='_cd_staff']//tr[4]";
 	private static final String ADD_STAFF_BUTTON = "//button[@id='act_primary']";
-	private static final String EMAIL_XPATH = "//input[@id='_ase1";
-	private static final String FIRST_NAME = "//input[@id='_asf1";
-	private static final String LAST_NAME = "//input[@id='_asl1";
+	private static final String EMAIL_XPATH = "//input[@id='_ase";
+	private static final String FIRST_NAME = "//input[@id='_asf";
+	private static final String LAST_NAME = "//input[@id='_asl";
 	private static final String INPUT_ENDING_XPATH = "']";
 	private static final String SAVE_EMPLOYEES = "//button[@id='_as_save_multiple']";
 

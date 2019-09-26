@@ -6,14 +6,14 @@ import org.openqa.selenium.WebElement;
 
 public class HumanityMenu {
 	public static final String URL = "https://tkb1.humanity.com/app/dashboard/";
-	//private static final String DASHBOARD = "//a[@id='sn_dashboard']//span[@class='primNavQtip__inner']";
-	private static final String DASHBOARD ="//p[contains(text(),'Dashboard')]";
+	private static final String DASHBOARD = "//a[@id='sn_dashboard']//span[@class='primNavQtip__inner']";
+	//private static final String DASHBOARD ="//p[contains(text(),'Dashboard')]";
 	private static final String SHIFT_PLANNING = "//p[contains(text(),'ShiftPlanning')]";
 	private static final String TIME_CLOCK = "//p[contains(text(),'Time Clock')]";
 	private static final String LEAVE = "//p[@class='primNavQtip__itemName'][contains(text(),'Leave')]";
 	private static final String TRAINING = "//p[contains(text(),'Training')]";
 	//private static final String STAFF = "//a[@id='sn_staff']//span[@class='primNavQtip__inner']";
-	private static final String STAFF ="//p[contains(text(),'Staff')]";
+	private static final String STAFF ="//a[@id='sn_staff']//span[@class='primNavQtip__inner']";
 	private static final String PAYROLL = "//p[contains(text(),'Payroll')]";
 	private static final String REPORTS = "//a[@id='sn_reports']//span[@class='primNavQtip__inner']";
 	private static final String SIGN_OUT = "//a[contains(text(),'Sign Out')]";
