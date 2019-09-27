@@ -50,9 +50,16 @@ public class HumanityProfile {
 	}
 
 	// VersionApp
-	public static WebElement getVersionApp(WebDriver driver) {
-		return driver.findElement(By.xpath(AVAILABILITY));
-	}
+		public static WebElement getVersionApp(WebDriver driver) {
+			return driver.findElement(By.xpath(AVAILABILITY));
+
+		}
+
+		public static void printVersion(WebDriver driver) {
+			WebElement we = driver.findElement(By.xpath(VERSION_APP));
+			String s = we.getText();
+			System.out.println(s);
+		}
 
 //ARROW
 	public static WebElement getArrow(WebDriver driver) {
